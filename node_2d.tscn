@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxwywk68hxn7c"]
+[gd_scene load_steps=2 format=3 uid="uid://b1jms1n030g7p"]
 
 [sub_resource type="TileSet" id="TileSet_8it1q"]
 tile_size = Vector2i(64, 64)
