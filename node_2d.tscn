@@ -1,14 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://ba7oa3mvjj6pr"]
+[gd_scene load_steps=2 format=3 uid="uid://b1jms1n030g7p"]
 
-[ext_resource type="Script" path="res://node_2d.gd" id="1_en7hi"]
-
-[sub_resource type="TileSet" id="TileSet_e5fav"]
+[sub_resource type="TileSet" id="TileSet_0fngf"]
 tile_size = Vector2i(64, 64)
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_en7hi")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(576, 320)
-tile_set = SubResource("TileSet_e5fav")
+position = Vector2(576, 318)
+tile_set = SubResource("TileSet_0fngf")
 format = 2
