@@ -1,11 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1jms1n030g7p"]
+[gd_scene load_steps=5 format=3 uid="uid://b1jms1n030g7p"]
 
-[sub_resource type="TileSet" id="TileSet_0fngf"]
+[ext_resource type="Texture2D" uid="uid://dvutnpw776xoh" path="res://icon.svg" id="1_bobp4"]
+[ext_resource type="Script" path="res://TileMap.gd" id="2_62e32"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3k2hb"]
+texture = ExtResource("1_bobp4")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_cyem8"]
 tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_3k2hb")
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(583, 322)
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(576, 318)
-tile_set = SubResource("TileSet_0fngf")
+tile_set = SubResource("TileSet_cyem8")
 format = 2
+script = ExtResource("2_62e32")
