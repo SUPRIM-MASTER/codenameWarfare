@@ -10,3 +10,9 @@ zoom = Vector2(0.1, 0.1)
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_0rnyx")
 format = 2
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1151.0
+offset_bottom = 646.0
+theme_override_font_sizes/font_size = 100
+text = "BABABUI"
