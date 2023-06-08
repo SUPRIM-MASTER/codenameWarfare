@@ -1,7 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdcetsq5aacqa"]
-
-[ext_resource type="Script" path="res://Camera2D.gd" id="1_pj402"]
-[ext_resource type="Script" path="res://TileMap.gd" id="1_aavdl"]
+[gd_scene load_steps=2 format=3 uid="uid://bdcetsq5aacqa"]
 
 [sub_resource type="TileSet" id="TileSet_0rnyx"]
 
@@ -9,12 +6,10 @@
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.1, 0.1)
-script = ExtResource("1_pj402")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_0rnyx")
 format = 2
-script = ExtResource("1_aavdl")
 
 [node name="Button" type="Button" parent="."]
 offset_right = 1152.0
