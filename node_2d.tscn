@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdcetsq5aacqa"]
+[gd_scene load_steps=8 format=3 uid="uid://bdcetsq5aacqa"]
+
+[ext_resource type="Texture2D" uid="uid://ciamr3ka4yji0" path="res://codenameWarfare slike/brdo.png" id="1_ch3gd"]
+[ext_resource type="Texture2D" uid="uid://ubyi7afghbtn" path="res://codenameWarfare slike/nizina.png" id="2_frrhp"]
+[ext_resource type="Texture2D" uid="uid://d27jrnc03if56" path="res://codenameWarfare slike/voda.png" id="3_cn7c2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f12bw"]
+texture = ExtResource("1_ch3gd")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_08cte"]
+texture = ExtResource("2_frrhp")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3muys"]
+texture = ExtResource("3_cn7c2")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_0rnyx"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_f12bw")
+sources/1 = SubResource("TileSetAtlasSource_08cte")
+sources/2 = SubResource("TileSetAtlasSource_3muys")
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,9 +33,3 @@ zoom = Vector2(0.1, 0.1)
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_0rnyx")
 format = 2
-
-[node name="Button" type="Button" parent="."]
-offset_right = 1152.0
-offset_bottom = 650.0
-theme_override_font_sizes/font_size = 200
-text = "Ivan je kralj"
