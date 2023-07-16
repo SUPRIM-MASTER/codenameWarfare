@@ -9,8 +9,8 @@ func _input(ev):
 		z-=1
 	elif Input.is_action_just_pressed("scroll_up") and z < 15:
 		z+=1
-	elif ev is InputEventMouseMotion:
-		if Input.is_action_pressed("left_click"):
+	elif Input.is_action_pressed("left_click"):
+		if ev is InputEventMouseMotion:
 			position -= ev.relative / zoom
 	else:
 		return
